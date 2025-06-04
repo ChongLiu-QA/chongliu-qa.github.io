@@ -1,0 +1,16 @@
+
+title: "ChongLiu's Tech Blog"
+email: your-email@example.com
+description: >- 
+  A clean and minimal blog about payments, testing, and engineering.
+baseurl: ""
+url: "https://chongliu.github.io"
+theme: minima
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+kramdown:
+  input: GFM
+  hard_wrap: false
+  syntax_highlighter: rouge
