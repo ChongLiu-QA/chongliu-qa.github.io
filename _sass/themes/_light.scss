@@ -1,125 +1,124 @@
 @mixin styles {
   /* Framework color */
-  --main-bg: white;
-  --mask-bg: #c1c3c5;
-  --main-border-color: #f3f3f3;
+  --main-bg: #fff5f5; /* 浅粉色背景 */
+  --mask-bg: #ffb6c1; /* 粉色遮罩 */
+  --main-border-color: #ffdbe9; /* 柔和粉色边框 */
 
   /* Common color */
-  --text-color: #34343c;
-  --text-muted-color: #757575;
-  --text-muted-highlight-color: inherit;
-  --heading-color: #2a2a2a;
-  --label-color: #585858;
-  --blockquote-border-color: #eeeeee;
-  --blockquote-text-color: #757575;
-  --link-color: #0056b2;
-  --link-underline-color: #dee2e6;
-  --button-bg: #ffffff;
-  --btn-border-color: #e9ecef;
-  --btn-backtotop-color: #686868;
-  --btn-backtotop-border-color: #f1f1f1;
-  --checkbox-color: #c5c5c5;
-  --checkbox-checked-color: #07a8f7;
+  --text-color: #4a2f3a; /* 深粉色文字 */
+  --text-muted-color: #8b5a6b; /* 柔和粉色灰 */
+  --text-muted-highlight-color: #ff69b4; /* 鲜艳粉色高亮 */
+  --heading-color: #c71585; /* 深粉色标题 */
+  --label-color: #db7093; /* 中间粉色标签 */
+  --blockquote-border-color: #ffb6c1; /* 粉色引用边框 */
+  --blockquote-text-color: #8b5a6b; /* 柔和粉色引用文字 */
+  --link-color: #ff69b4; /* 鲜艳粉色链接 */
+  --link-underline-color: #ffdbe9; /* 浅粉色下划线 */
+  --button-bg: #ffe4e1; /* 浅粉色按钮背景 */
+  --btn-border-color: #ffdbe9; /* 粉色按钮边框 */
+  --btn-backtotop-color: #db7093; /* 粉色返回顶部 */
+  --btn-backtotop-border-color: #ffdbe9; /* 浅粉色边框 */
+  --checkbox-color: #ffb6c1; /* 粉色复选框 */
+  --checkbox-checked-color: #ff69b4; /* 鲜艳粉色选中 */
   --img-bg: radial-gradient(
     circle,
-    rgb(255, 255, 255) 0%,
-    rgb(239, 239, 239) 100%
+    #fff5f5 0%,
+    /* 浅粉色 */ #ffe4e1 100% /* 更浅粉色 */
   );
   --shimmer-bg: linear-gradient(
     90deg,
-    rgba(250, 250, 250, 0) 0%,
-    rgba(232, 230, 230, 1) 50%,
-    rgba(250, 250, 250, 0) 100%
+    rgba(255, 245, 245, 0) 0%,
+    #ffe4e1 50%,
+    /* 浅粉色 */ rgba(255, 245, 245, 0) 100%
   );
 
   /* Sidebar */
-  --site-title-color: rgb(113, 113, 113);
-  --site-subtitle-color: #717171;
-  --sidebar-bg: #f6f8fa;
-  --sidebar-border-color: #efefef;
-  --sidebar-muted-color: #545454;
-  --sidebar-active-color: #1d1d1d;
-  --sidebar-hover-bg: rgb(223, 233, 241, 0.64);
-  --sidebar-btn-bg: white;
-  --sidebar-btn-color: #8e8e8e;
-  --avatar-border-color: white;
+  --site-title-color: #c71585; /* 深粉色标题 */
+  --site-subtitle-color: #db7093; /* 中间粉色副标题 */
+  --sidebar-bg: #fff5f5; /* 浅粉色侧边栏 */
+  --sidebar-border-color: #ffdbe9; /* 浅粉色边框 */
+  --sidebar-muted-color: #8b5a6b; /* 柔和粉色灰 */
+  --sidebar-active-color: #ff69b4; /* 鲜艳粉色激活 */
+  --sidebar-hover-bg: rgba(255, 219, 233, 0.64); /* 透明粉色悬停 */
+  --sidebar-btn-bg: #ffe4e1; /* 浅粉色按钮 */
+  --sidebar-btn-color: #db7093; /* 粉色按钮文字 */
+  --avatar-border-color: #fff5f5; /* 浅粉色头像边框 */
 
   /* Topbar */
-  --topbar-bg: rgb(255, 255, 255, 0.7);
-  --topbar-text-color: rgb(78, 78, 78);
-  --search-border-color: rgb(240, 240, 240);
-  --search-icon-color: #c2c6cc;
-  --input-focus-border-color: #b8b8b8;
+  --topbar-bg: rgba(255, 245, 245, 0.7); /* 透明浅粉色 */
+  --topbar-text-color: #4a2f3a; /* 深粉色文字 */
+  --search-border-color: #ffdbe9; /* 浅粉色搜索边框 */
+  --search-icon-color: #ffb6c1; /* 粉色搜索图标 */
+  --input-focus-border-color: #ff69b4; /* 鲜艳粉色输入框焦点 */
 
   /* Home page */
-  --post-list-text-color: dimgray;
-  --btn-patinator-text-color: #555555;
-  --btn-paginator-hover-color: var(--sidebar-bg);
+  --post-list-text-color: #8b5a6b; /* 柔和粉色列表文字 */
+  --btn-patinator-text-color: #db7093; /* 粉色分页文字 */
+  --btn-paginator-hover-color: #fff5f5; /* 浅粉色悬停 */
 
   /* Posts */
-  --toc-highlight: #0550ae;
-  --toc-popup-border-color: lightgray;
-  --btn-share-color: gray;
-  --btn-share-hover-color: #0d6efd;
-  --card-bg: white;
-  --card-hovor-bg: #e2e2e2;
-  --card-shadow: rgb(104, 104, 104, 0.05) 0 2px 6px 0,
-    rgba(211, 209, 209, 0.15) 0 0 0 1px;
-  --footnote-target-bg: lightcyan;
-  --tb-odd-bg: #fbfcfd;
-  --tb-border-color: #eaeaea;
-  --dash-color: silver;
-  --kbd-wrap-color: #bdbdbd;
-  --kbd-text-color: var(--text-color);
-  --kbd-bg-color: white;
-  --prompt-text-color: rgb(46, 46, 46, 0.77);
-  --prompt-tip-bg: rgb(123, 247, 144, 0.2);
-  --prompt-tip-icon-color: #03b303;
-  --prompt-info-bg: #e1f5fe;
-  --prompt-info-icon-color: #0070cb;
-  --prompt-warning-bg: rgb(255, 243, 205);
-  --prompt-warning-icon-color: #ef9c03;
-  --prompt-danger-bg: rgb(248, 215, 218, 0.56);
-  --prompt-danger-icon-color: #df3c30;
+  --toc-highlight: #ff69b4; /* 鲜艳粉色目录高亮 */
+  --toc-popup-border-color: #ffdbe9; /* 浅粉色弹出边框 */
+  --btn-share-color: #db7093; /* 粉色分享按钮 */
+  --btn-share-hover-color: #ff69b4; /* 鲜艳粉色悬停 */
+  --card-bg: #fff5f5; /* 浅粉色卡片背景 */
+  --card-hovor-bg: #ffe4e1; /* 浅粉色卡片悬停 */
+  --card-shadow: rgba(199, 21, 133, 0.1) 0 2px 6px 0,
+    rgba(255, 219, 233, 0.15) 0 0 0 1px; /* 粉色阴影 */
+  --footnote-target-bg: #ffe4e1; /* 浅粉色脚注 */
+  --tb-odd-bg: #fff5f5; /* 浅粉色表格奇数行 */
+  --tb-border-color: #ffdbe9; /* 浅粉色表格边框 */
+  --dash-color: #ffb6c1; /* 粉色虚线 */
+  --kbd-wrap-color: #db7093; /* 粉色键盘输入边框 */
+  --kbd-text-color: #4a2f3a; /* 深粉色键盘文字 */
+  --kbd-bg-color: #fff5f5; /* 浅粉色键盘背景 */
+  --prompt-text-color: rgba(74, 47, 58, 0.77); /* 深粉色提示文字 */
+  --prompt-tip-bg: rgba(255, 182, 193, 0.2); /* 透明粉色提示背景 */
+  --prompt-tip-icon-color: #ff69b4; /* 鲜艳粉色提示图标 */
+  --prompt-info-bg: #ffe4e1; /* 浅粉色信息背景 */
+  --prompt-info-icon-color: #db7093; /* 粉色信息图标 */
+  --prompt-warning-bg: rgba(255, 245, 245, 0.5); /* 浅粉色警告背景 */
+  --prompt-warning-icon-color: #c71585; /* 深粉色警告图标 */
+  --prompt-danger-bg: rgba(255, 182, 193, 0.56); /* 粉色危险背景 */
+  --prompt-danger-icon-color: #ff69b4; /* 鲜艳粉色危险图标 */
 
   /* Tags */
-  --tag-border: #dee2e6;
-  --tag-shadow: var(--btn-border-color);
-  --tag-hover: rgb(222, 226, 230);
-  --search-tag-bg: #f8f9fa;
+  --tag-border: #ffdbe9; /* 浅粉色标签边框 */
+  --tag-shadow: #ffdbe9; /* 浅粉色标签阴影 */
+  --tag-hover: #ffe4e1; /* 浅粉色标签悬停 */
+  --search-tag-bg: #fff5f5; /* 浅粉色搜索标签背景 */
 
   /* Categories */
-  --categories-border: rgba(0, 0, 0, 0.125);
-  --categories-hover-bg: var(--btn-border-color);
-  --categories-icon-hover-color: darkslategray;
+  --categories-border: rgba(199, 21, 133, 0.125); /* 透明深粉色分类边框 */
+  --categories-hover-bg: #ffdbe9; /* 浅粉色分类悬停 */
+  --categories-icon-hover-color: #c71585; /* 深粉色图标悬停 */
 
   /* Archive */
-  --timeline-color: rgba(0, 0, 0, 0.075);
-  --timeline-node-bg: #c2c6cc;
-  --timeline-year-dot-color: #ffffff;
+  --timeline-color: rgba(199, 21, 133, 0.075); /* 透明深粉色时间轴 */
+  --timeline-node-bg: #ffb6c1; /* 粉色时间轴节点 */
+  --timeline-year-dot-color: #fff5f5; /* 浅粉色年份点 */
 
   /* --- Custom code light mode colors --- */
-  --language-border-color: #ececec;
-  --highlight-bg-color: #f6f8fa;
-  --highlighter-rouge-color: #3f596f;
-  --highlight-lineno-color: #9e9e9e;
-  --inline-code-bg: rgba(25, 25, 28, 0.05);
-  --code-color: #3a3a3a;
-  --code-header-text-color: #a3a3a3;
-  --code-header-muted-color: #e5e5e5;
-  --code-header-icon-color: #c9c8c8;
-  --clipboard-checked-color: #43c743;
+  --language-border-color: #ffdbe9; /* 浅粉色代码边框 */
+  --highlight-bg-color: #fff5f5; /* 浅粉色代码背景 */
+  --highlighter-rouge-color: #c71585; /* 深粉色代码高亮 */
+  --highlight-lineno-color: #db7093; /* 粉色行号 */
+  --inline-code-bg: rgba(255, 219, 233, 0.1); /* 透明粉色内联代码 */
+  --code-color: #4a2f3a; /* 深粉色代码文字 */
+  --code-header-text-color: #8b5a6b; /* 柔和粉色代码头部 */
+  --code-header-muted-color: #ffe4e1; /* 浅粉色头部灰色 */
+  --code-header-icon-color: #db7093; /* 粉色头部图标 */
+  --clipboard-checked-color: #ff69b4; /* 鲜艳粉色剪贴板选中 */
 
   [class^='prompt-'] {
-    --link-underline-color: rgb(219, 216, 216);
+    --link-underline-color: #ffdbe9; /* 浅粉色提示下划线 */
   }
 
   .dark {
-    display: none;
+    display: none; /* 禁用深色模式 */
   }
 
-  /* --- Syntax highlight theme from `rougify style github` --- */
-
+  /* --- Syntax highlight theme (adjusted for pink) --- */
   .highlight table td {
     padding: 5px;
   }
@@ -130,8 +129,8 @@
 
   .highlight,
   .highlight .w {
-    color: #24292f;
-    background-color: #f6f8fa;
+    color: #4a2f3a; /* 深粉色文字 */
+    background-color: #fff5f5; /* 浅粉色背景 */
   }
 
   .highlight .k,
@@ -141,55 +140,37 @@
   .highlight .kr,
   .highlight .kt,
   .highlight .kv {
-    color: #cf222e;
+    color: #ff69b4; /* 鲜艳粉色关键字 */
   }
 
   .highlight .gr {
-    color: #f6f8fa;
+    color: #fff5f5; /* 浅粉色错误 */
   }
 
   .highlight .gd {
-    color: #82071e;
-    background-color: #ffebe9;
+    color: #c71585; /* 深粉色删除 */
+    background-color: #ffe4e1; /* 浅粉色背景 */
   }
 
-  .highlight .nb {
-    color: #953800;
-  }
-
-  .highlight .nc {
-    color: #953800;
-  }
-
-  .highlight .no {
-    color: #953800;
-  }
-
+  .highlight .nb,
+  .highlight .nc,
+  .highlight .no,
   .highlight .nn {
-    color: #953800;
+    color: #db7093; /* 粉色名称 */
   }
 
-  .highlight .sr {
-    color: #116329;
-  }
-
-  .highlight .na {
-    color: #116329;
-  }
-
+  .highlight .sr,
+  .highlight .na,
   .highlight .nt {
-    color: #116329;
+    color: #ff69b4; /* 鲜艳粉色属性 */
   }
 
   .highlight .gi {
-    color: #116329;
-    background-color: #dafbe1;
+    color: #ff69b4; /* 鲜艳粉色添加 */
+    background-color: #fff5f5; /* 浅粉色背景 */
   }
 
-  .highlight .kc {
-    color: #0550ae;
-  }
-
+  .highlight .kc,
   .highlight .l,
   .highlight .ld,
   .highlight .m,
@@ -199,50 +180,25 @@
   .highlight .mi,
   .highlight .il,
   .highlight .mo,
-  .highlight .mx {
-    color: #0550ae;
-  }
-
-  .highlight .sb {
-    color: #0550ae;
-  }
-
-  .highlight .bp {
-    color: #0550ae;
-  }
-
-  .highlight .ne {
-    color: #0550ae;
-  }
-
-  .highlight .nl {
-    color: #0550ae;
-  }
-
-  .highlight .py {
-    color: #0550ae;
-  }
-
+  .highlight .mx,
+  .highlight .sb,
+  .highlight .bp,
+  .highlight .ne,
+  .highlight .nl,
+  .highlight .py,
   .highlight .nv,
   .highlight .vc,
   .highlight .vg,
   .highlight .vi,
-  .highlight .vm {
-    color: #0550ae;
-  }
-
+  .highlight .vm,
   .highlight .o,
   .highlight .ow {
-    color: #0550ae;
+    color: #c71585; /* 深粉色常量 */
   }
 
-  .highlight .gh {
-    color: #0550ae;
-    font-weight: bold;
-  }
-
+  .highlight .gh,
   .highlight .gu {
-    color: #0550ae;
+    color: #c71585; /* 深粉色头部 */
     font-weight: bold;
   }
 
@@ -257,21 +213,18 @@
   .highlight .sx,
   .highlight .s1,
   .highlight .ss {
-    color: #0a3069;
+    color: #db7093; /* 粉色字符串 */
   }
 
-  .highlight .nd {
-    color: #8250df;
-  }
-
+  .highlight .nd,
   .highlight .nf,
   .highlight .fm {
-    color: #8250df;
+    color: #ff69b4; /* 鲜艳粉色函数 */
   }
 
   .highlight .err {
-    color: #f6f8fa;
-    background-color: #82071e;
+    color: #fff5f5; /* 浅粉色错误 */
+    background-color: #c71585; /* 深粉色背景 */
   }
 
   .highlight .c,
@@ -281,33 +234,16 @@
   .highlight .cp,
   .highlight .cpf,
   .highlight .c1,
-  .highlight .cs {
-    color: #68717a;
-  }
-
-  .highlight .gl {
-    color: #68717a;
-  }
-
+  .highlight .cs,
+  .highlight .gl,
   .highlight .gt {
-    color: #68717a;
+    color: #8b5a6b; /* 柔和粉色注释 */
   }
 
-  .highlight .ni {
-    color: #24292f;
-  }
-
-  .highlight .si {
-    color: #24292f;
-  }
-
-  .highlight .ge {
-    color: #24292f;
-    font-style: italic;
-  }
-
+  .highlight .ni,
+  .highlight .si,
+  .highlight .ge,
   .highlight .gs {
-    color: #24292f;
-    font-weight: bold;
+    color: #4a2f3a; /* 深粉色实体 */
   }
 }
